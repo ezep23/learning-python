@@ -73,7 +73,42 @@ print(largo_nombre)
 # [start:stop:step] 
 
 nombre_corto = nombre[:5:]
-#programación arrancamos a contar desde 0
 
+#funciones - mala práctica hacerlas individuales para cada persona
+def saludarUnico():
+    print("Hola! Espero que estés muy bien :)")
+saludar()
 
+#Estandarizar una función
+#Buena practicar comentar sobre las funciones y comentar para que sirve
+def saludar(nombre):
+    print("Hola! " + nombre + " Espero que estés muy bien :)")
 
+saludar("Manuel")
+saludar("Juan")
+saludar("Ernesto")
+
+# Función que suma 2 números que le otorguemos.
+def suma(numero1, numero2)
+    print("El resultado es: " + numero1 + numero2)
+
+suma(5,4)
+suma(25,25)#Scope de funciones -> El codigo en toda la hoja index.py es global, mientras# que el codigo de una función es local.
+
+# Recibe 2 números y devuelve la suma de ellos
+def suma(sumando_1, sumando_2):
+    resultado = sumando_1 + sumando_2
+    return resultado #return -> devuelve un valor
+
+resultado_suma = suma(5,9)
+print(resultado_suma)
+
+#Una función que devuelve más de 2 resultados
+def resultados(numero_1, numero_2):
+    suma = numero_1 + numero_2
+    resta = numero_1 - numero_2
+    return suma, resta #-> para que nos devuelva la suma por un lado y la resta por otro.
+suma, resta = resultados(10, 5)
+
+print("La suma es ", suma)
+print("La resta es ", resta)
