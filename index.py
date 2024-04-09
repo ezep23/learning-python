@@ -112,3 +112,17 @@ suma, resta = resultados(10, 5)
 
 print("La suma es ", suma)
 print("La resta es ", resta)
+
+#Ingreso de datos por el usuario
+valor = input(6) 
+
+print(valor)
+print(type(valor))
+
+#Otra forma
+#valor = input()
+numerox = int(input("Ingrese un numero: "))
+otro_numerox = int(input("Ingrese otro numero: "))
+
+adicion = numerox + otro_numerox
+print(adicion)
