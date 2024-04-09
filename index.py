@@ -26,6 +26,9 @@ print("Buen día, me gustaria invitarte mi buen, ", rol, " a mi cumpleaños el d
 hw = ¡Hola, Mundo!
 print(hw)
 
+# Enteros: 
+# Suma, resta, división, multiplicación
+
 numero = 5 
 snumero = 10
 print("Mi numero es ", numero)
@@ -36,8 +39,41 @@ print(resultado)
 resultado_resta = snumero - numero
 print(resultado_resta)
 
-resultado_multiplicacion = snumero*numero
+resultado_multiplicacion = snumero * numero
 print(resultado_multiplicacion)
 
-resultado_division = snumero/numero
+resultado_division = snumero / numero
 print(resultado_division)
+
+# Tipo de datos
+
+x = 10
+x2 = 12.4
+x3 = 'hola'
+
+print(type(x)) #int 
+print(type(x2)) #float
+print(type(x3)) #string
+
+#concatenando strings
+nombre = "pensamiento"
+apellido = "computacional"
+nombre_materia = nombre + ' ' + apellido
+print(nombre_materia)
+
+
+#metodo para saber el largo 
+largo_nombre = len(nombre) #len -> length
+print(largo_nombre)
+
+#aplicando metodo para cortar un string
+[::] # -> substring
+
+# nombre_corto = nombre[desde_donde:hasta_donde:cada_cuantas_letras]
+# [start:stop:step] 
+
+nombre_corto = nombre[:5:]
+#programación arrancamos a contar desde 0
+
+
+
