@@ -136,3 +136,31 @@ NUMERO_PI  3.14159265
 
 #siempre usar nombres "nmemotecnico"
 procesador_computadora_tio = "Intel i3"
+
+#Una calculadora a la cual tenemos que asignarle los números a operar en sus params.
+def calculadora(numero1, numero2):
+  print("suma: ", numero1+numero2)
+  print("resta: ", numero1-numero2)
+  print("multiplicación: ", numero1*numero2)
+  print("division: ", int(numero1/numero2))
+  print("producto ", numero1%numero2)
+  return ("Esos son los resultados")
+
+numero1 = int(input("Ingrese el primer número de la calculadora: "))
+numero2 = int(input("Por favor, ingrese el segundo número: "))
+calculadora(numero1, numero2)
+
+#Pedimos un número y nos devuelve otro
+numero = int(input("Ingrese un numero: "))
+
+print("Usted ha elegido el numero:",numero)
+
+#función que analiza si un numero es par o impar
+def par_impar(numero):
+  if numero % 2 == 0:
+    return "Es par"
+  else:
+    numero % 2 != 0:
+    return "Es impar"
+
+numero = int(input("Ingrese un numero para determinar si es par o impar: "))
