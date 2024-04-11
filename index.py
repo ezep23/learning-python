@@ -158,9 +158,34 @@ print("Usted ha elegido el numero:",numero)
 #función que analiza si un numero es par o impar
 def par_impar(numero):
   if numero % 2 == 0:
-    return "Es par"
+    print(numero, " es par")
   else:
-    numero % 2 != 0:
-    return "Es impar"
+    print(numero, " es impar")
 
 numero = int(input("Ingrese un numero para determinar si es par o impar: "))
+par_impar(numero)
+
+#función que determina la edad de una persona en cierto año
+def calcularEdad(natalicio, año):
+  edad = año - natalicio
+  print("La cantidad de años que se cumplirían desde tu natalicio son: ", edad)
+
+natalicio = int(input("Fecha de nacimiento: "))
+año = int(input("año a calcular: "))
+calcularEdad(natalicio, año)
+
+#funcion que devuelve el anterior y el siguiente
+def sumar_restar(valor):
+  print("El siguiente es: ", valor + 1)
+  print("El Anterior es: ", valor - 1)
+
+valor = int(input("Dame un numero: "))
+sumar_restar(valor)
+
+#funcion que suma una string y un valor entero como string
+def sumar_datos(entero):
+  string = entero + int("1")
+  print(string)
+
+entero = int(input("Dame un numero: "))
+sumar_datos(entero)
