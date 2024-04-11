@@ -127,4 +127,12 @@ otro_numerox = int(input("Ingrese otro numero: "))
 adicion = numerox + otro_numerox
 print(adicion)
 
-# Bucles
+# Las constantes en python no existen, pero son simuladas
+# Se usa mayuscula y snake case
+NUMERO_PI  3.14159265
+
+#eval() es una función que se utiliza para calcular operaciones aritmeticas
+#pow() se usa para elevar a x potencia un numero
+
+#siempre usar nombres "nmemotecnico"
+procesador_computadora_tio = "Intel i3"
