@@ -189,3 +189,33 @@ def sumar_datos(entero):
 
 entero = int(input("Dame un numero: "))
 sumar_datos(entero)
+
+#concatenando strings
+nombre = str(input("¿Cual es tu nombre? "))
+apellido = str(input("¿Cual es tu apellido? "))
+
+nombre_completo = apellido + " " + nombre
+print("Tu nombre completo es: ", nombre_completo)
+
+#calculando el ancho de una palabra
+def contar_letras(palabra):
+  print("La cantidad de letras que tiene su palabra son: ", len(palabra))
+
+palabra = str(input("Dame una palabra para contar sus letras: "))
+contar_letras(palabra)
+
+#Imprimiendo los primeros 5 caracteres
+def cinco_letras(palabra):
+  resultado = palabra[0:5]
+  print("El resultado es: ", resultado)
+
+palabra = str(input("Por favor, dime una palabra: "))
+cinco_letras(palabra)
+
+#Eliminando las a
+def eliminando_letras(texto):
+  resultado = texto.replace("a", " ")
+  print("El resultado es: ", resultado)
+
+texto = str(input("Por favor, dime una palabra: "))
+eliminando_letras(texto)
