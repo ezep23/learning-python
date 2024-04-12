@@ -219,3 +219,12 @@ def eliminando_letras(texto):
 
 texto = str(input("Por favor, dime una palabra: "))
 eliminando_letras(texto)
+
+#Expresion que determina si un numero es mayor o menor 
+numero_uno = int(input("Escribe un numero: "))
+numero_dos = int(input("Escribe un segundo numero"))
+
+if numero_uno > numero_dos: 
+  print("El primer numero es mayor ")
+else:
+  print("El primer numero es menor ")
