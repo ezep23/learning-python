@@ -228,3 +228,8 @@ if numero_uno > numero_dos:
   print("El primer numero es mayor ")
 else:
   print("El primer numero es menor ")
+
+CONSTANTE_PI = 3.1415
+
+def sumar(numero1, numero2):
+  
