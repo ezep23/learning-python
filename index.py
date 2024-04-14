@@ -220,16 +220,79 @@ def eliminando_letras(texto):
 texto = str(input("Por favor, dime una palabra: "))
 eliminando_letras(texto)
 
-#Expresion que determina si un numero es mayor o menor 
-numero_uno = int(input("Escribe un numero: "))
-numero_dos = int(input("Escribe un segundo numero"))
+#Expresion que determina si un numero es mayor o menor al otro 
+primer_valor = str(input("Escribe un valor: "))
+segundo_valor = str(input("Escriba un segundo valor: "))
 
-if numero_uno > numero_dos: 
-  print("El primer numero es mayor ")
+if (primer_valor > segundo_valor):
+  print(primer_valor, "es mayor")
+  print(primer_valor > segundo_valor)
+elif (segundo_valor > primer_valor):
+  print(segundo_valor, "es mayor")
+  print(segundo_valor > primer_valor)
 else:
-  print("El primer numero es menor ")
+  print("El valor de ambos es igual")
+  print(primer_valor == segundo_valor)
 
-CONSTANTE_PI = 3.1415
+#Expresion que determina que una letra no es una vocal
+letra = str(input("Escribe una letra: "))
 
-def sumar(numero1, numero2):
+if letra in "aeiouAEIOU":
+  print("Es una vocal")
+else: 
+  print("No es una vocal")
+
+#Expresion que determina que una letra no es una vocal
+valor = int(input("Escribe un numero: "))
+
+if valor % 2 == 0 and valor < 10: 
+  print("Cumple las consignas de ser par y menor que 10")
+else: 
+  print("No cumple las consignas de ser par y menor que 10")
   
+ #funcion que devuelve el valor absoluto de un numero
+def modulo(numero):
+  if numero < 0:
+    negativo = numero * -1
+    print("El valor absouluto es", negativo)
+  elif numero > 0:
+    print("El valor absoluto es", numero)
+  else:
+    print("El modulo es 0")
+
+numero = int(input("Escribe un número para saber su valor absoluto: "))
+modulo(numero) 
+
+# Piedra, papel o tijera
+def piedra_papel_tijera(jugada):
+  if jugada in "rptRPT":
+    if jugada in "rR":
+      print("Roca contra papel, gana el papel perdiste")
+    elif jugada in "pP":
+      print("Papel contra tijeras, gana tijeras perdiste")
+    else:
+      print("Tijeras contra roca, gana roca perdiste")
+  else:
+    print("Esa no es una opción correcta")
+
+jugada = str(input("Elige una opción: (R) piedra - (P) papel - (T) tijera: "))
+piedra_papel_tijera(jugada)
+
+# funcion para saber cuanto falta para un valor maximo
+def valor_maximo(valor1, valor2, meta):
+  final = meta - (valor1 + valor2) 
+  print("Te faltan:", final)
+
+meta = int(input("¿Cual es el objetivo que quieres lograr?: "))
+valor1 = int(input("Primer valor: "))
+valor2 = int(input("Segundo valor: "))
+valor_maximo(valor1, valor2, meta)
+
+#expresion para identificar con letras las estaciones
+estaciones = str(input("¿en que estacion estamos?: "))
+
+if estaciones in "voipVOIP":
+  print("Es correcto")
+else:
+  print("Es incorrecto")
+
