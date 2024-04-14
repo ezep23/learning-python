@@ -301,3 +301,9 @@ numero = int(input("Los chicos quieren aprender a contar hasta el numero: "))
 
 for a in range(1, numero + 1):
   print(a)
+
+#Cantadole el feliz cumpleaños a una persona x numero de veces
+numero = int(input("¿Cuantos años cumpliste?: "))
+
+for a in range(1, numero + 1):
+  print("Feliz cumpleaños")
