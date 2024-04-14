@@ -296,3 +296,8 @@ if estaciones in "voipVOIP":
 else:
   print("Es incorrecto")
 
+#Enseñandoles a contar a unos nenes
+numero = int(input("Los chicos quieren aprender a contar hasta el numero: "))
+
+for a in range(1, numero + 1):
+  print(a)
