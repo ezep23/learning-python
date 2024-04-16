@@ -347,3 +347,22 @@ persona2 = ["Pepe", 23]
 persona3 = ["Juancito", 64]
 
 lista_personas = (persona1, persona2, persona3)
+
+#Diccionarios 
+#Almacenando estudiantes - MAL
+def estudiante(estudiantes, nombre, edad, dni, curso):
+  estudiante_nuevo = {
+    "nombre": nombre,
+    "edad": edad,
+    "dni": dni,
+    "curso": curso 
+  }
+  
+  estudiantes.append(estudiante_nuevo)
+  estudiantes[curso] = {}
+
+estudiantes = []
+estudiante(estudiantes, "Julian", 23, "41.045.27", "4toa")
+print(estudiantes)
+
+#
