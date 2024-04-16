@@ -340,3 +340,10 @@ print(max(nombres))
 
 #Imprimiendo la lista 3 veces
 print(nombres*3)
+
+#organizando tuplas en lista, yo creo que esto nos permite una mejor organizaciòn y un codigo mas limpio que meter todo en una tupla.
+persona1 = ["Ernesto", 31]
+persona2 = ["Pepe", 23]
+persona3 = ["Juancito", 64]
+
+lista_personas = (persona1, persona2, persona3)
