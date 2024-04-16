@@ -365,4 +365,15 @@ estudiantes = []
 estudiante(estudiantes, "Julian", 23, "41.045.27", "4toa")
 print(estudiantes)
 
-#
+#Acceder y modificar archivos
+archivo = open("archivoejemplo.txt")
+personas_crudo = archivo.readlines("archivoejemplo.txt") #imprime todo el texto
+archivo.close() #para cerrar el archivo
+
+#funcion para transformar el .csv a listas
+def transformar(persona):
+  persona = persona.strip("\n")
+  persona = persona.split(";")
+  return persona
+
+personas = list(map(transformar, personas_crudo))
