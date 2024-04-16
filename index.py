@@ -326,3 +326,17 @@ print(numeros)
 #Creando una tupla
 datos_personales = ("Ezequiel", 17)
 print(datos_personales[1])
+
+#Sabriamos que Juan es el ultimo elemento ya que el metodo append() asi lo hace.
+nombres = ["Ernesto", "Edgardo", "Beltran", "Martin", "Pepe"]
+
+nombres.pop(4)
+nombres.append("Juan")
+print(nombres)
+
+#Averiguando el nombre que se encuentre a 2 posiciones del final
+print(max(nombres))
+
+
+#Imprimiendo la lista 3 veces
+print(nombres*3)
