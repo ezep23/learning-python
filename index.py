@@ -307,3 +307,5 @@ numero = int(input("¿Cuantos años cumpliste?: "))
 
 for a in range(1, numero + 1):
   print("Feliz cumpleaños")
+
+# Metodos, tuplas y listas
