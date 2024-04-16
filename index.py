@@ -308,4 +308,21 @@ numero = int(input("¿Cuantos años cumpliste?: "))
 for a in range(1, numero + 1):
   print("Feliz cumpleaños")
 
-# Metodos, tuplas y listas
+# Accediendo a la lista
+mi_lista = [1,2,3,4,5,6,7,8,9,10]
+print(mi_lista[4])
+# Accendiendo a la longitud 
+print(len(mi_lista))
+
+#Encontrando el mayor y el menor de la lista
+numeros = [34,52,44,83,2,9,10,22,55]
+print(max(numeros))
+print(min(numeros))
+
+#Ordenando la lista
+numeros.sort()
+print(numeros)
+
+#Creando una tupla
+datos_personales = ("Ezequiel", 17)
+print(datos_personales[1])
