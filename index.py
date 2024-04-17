@@ -377,3 +377,9 @@ def transformar(persona):
   return persona
 
 personas = list(map(transformar, personas_crudo))
+
+#Manejar errores 
+#Consiste en no dejar al usuario en caso de haber algún error
+# para esto se utiliza 
+# try, except o incluso bucles while.
+
