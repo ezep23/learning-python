@@ -383,3 +383,4 @@ personas = list(map(transformar, personas_crudo))
 # para esto se utiliza 
 # try, except o incluso bucles while.
 
+#siempre boca loco 
