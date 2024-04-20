@@ -383,4 +383,6 @@ personas = list(map(transformar, personas_crudo))
 # para esto se utiliza 
 # try, except o incluso bucles while.
 
-#siempre boca loco 
+#Bibliotecas en python
+import matplotlib.pyplot as plt
+# O cualqueir otra biblioteca, esta nos permite hacer graficos en 2d
