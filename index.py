@@ -386,3 +386,6 @@ personas = list(map(transformar, personas_crudo))
 #Bibliotecas en python
 import matplotlib.pyplot as plt
 # O cualqueir otra biblioteca, esta nos permite hacer graficos en 2d
+# NumPy: libreria de cálculo númerico
+# Bokeh: librería para la creación de visualizaciones interactivas.
+# SciPy: librería para la computación científica
